@@ -1,0 +1,50 @@
+@use '../base/varibles.scss'as *;
+
+.contact {
+
+    &__desc {
+         line-height: 25px;
+         font-size: clamp(18px,5vw,22px);
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    textarea {
+        min-height: 150px;
+        max-height: 200px;
+        color: white;
+        outline: none;
+    }
+    input {
+        outline:none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .contact {
+        &__desc {
+         font-size: clamp(18px,5vw,24px);
+         line-height: 33px;
+            
+        }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    
+    .contact {
+
+    &__desc {
+         font-size: clamp(18px,5vw,24px);
+         line-height: 33px;
+         padding: 0 100px 40px;
+            
+        }
+
+        i {
+            font-size: 22px;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@use '../base/mixin.scss'as *;
+@use '../base/varibles.scss' as*;
+
+.cards {
+
+.service-card {
+
+    max-width:500px;
+
+    transition: 0.3s ease;
+
+    .icon {
+        transform: none;
+        box-shadow: 0px 5px 5px 1px rgb(6, 121, 198);
+    }
+
+    .service-p {
+        line-height: 20px;
+    }
+}
+
+.service-card:hover {
+     transform:translatey(-3px);
+     box-shadow: 0px 5px 10px black;
+}
+
+
+.point {
+    font-size:clamp(22px,5vw,20px);
+}
+
+
+ul {
+    li {
+        font-size:clamp(10px,4vw,16px); 
+        line-height: 23px; 
+    }
+}
+
+  .btn-learn{
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+    .btn-learn:hover {
+       background-color:lightskyblue;
+    }
+}
+
+@media screen and (min-width:640px) {
+    
+}
+
+@media screen and (min-width:1440px) {
+    
+    .cards {
+
+        padding-left:100px;
+        padding-right: 100px;
+        .container {
+          margin: 0;
+          padding: 0 50px;
+          gap: 50px;
+
+        }
+
+    }
+}
+
+
+@media screen and (min-width:1536px) {
+   
+   .cards { 
+    .service-card {
+    height: 400px;
+
+      .service-p {
+        font-size: 20px;
+    }
+   }
+
+   ul {
+    li {
+        font-size:clamp(10px,10vw,19px); 
+        line-height: 23px; 
+    }
+}
+  }
+
+  
+
+}

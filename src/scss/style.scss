@@ -1,0 +1,32 @@
+@use '../base/mixin.scss';
+@use '../base/varibles.scss';
+
+@use '../ui/buttons.scss';
+@use '../scss/fontello.css';
+@use '../base/basics.scss';
+@use '../scss/modern-normalize.min.css';
+@use '../ui/titles.scss';
+@use "../ui/texts.scss";
+
+
+@use '../blocks/hero.scss';
+@use '../blocks/header.scss';
+@use '../blocks/materials.scss';
+@use '../blocks/service.scss';
+@use '../blocks/work.scss';
+@use '../blocks/about.scss';
+@use '../blocks/contact.scss';
+@use '../blocks/footer.scss';
+
+
+// .section {
+//     opacity: 0;
+//     transition: transform 1s , opacity 0.6s;
+
+// }
+
+.show {
+    opacity: 1;
+    transform: translateY(-100px);
+
+}

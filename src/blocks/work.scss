@@ -1,0 +1,131 @@
+@use '../base/mixin.scss' as *;
+
+
+.work {
+
+   .swiper {
+      width: 70%;
+      height: 80%;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+    .slide-nav {
+      display: none;
+    }
+      .swiper-pagination {
+        bottom:45px;
+       }
+}
+
+@media screen and (min-width:425px) {
+.work {
+.swiper {
+      height:90%;
+}
+
+  .swiper-pagination {
+        bottom:25px;
+       }
+}
+}
+
+@media screen and (min-width:640px) {
+  
+  .work {
+
+
+   .swiper {
+      width: 70%;
+      height: 90%;
+    }
+
+
+  }
+
+
+}
+
+@media screen and (min-width:768px) {
+
+  .work {
+
+       .slide-nav {
+         display:block;
+         width: 30px;
+         height: 30px;
+       }
+       .slide-nav:nth-child(2) {
+         right: 40px;
+       }
+       .slide-nav:nth-child(3) {
+        left: 40px;
+       }
+       .slide-nav::after {
+        display: none;
+       }
+
+       .swiper-pagination {
+        bottom:5px;
+       }
+
+      .swiper {
+      width: 75%;
+      height: 80%;
+    }
+
+  }
+}
+
+@media screen and (min-width:1024px) {
+  
+  .work {
+
+   .swiper {
+      width: 80%;
+      height: 80%;
+    }
+
+       .slide-nav:nth-child(2) {
+         right: 30px;
+       }
+       .slide-nav:nth-child(3) {
+        left: 30px;
+       }
+
+        .swiper-pagination {
+        bottom:10px;
+       }
+  }
+}
+
+@media screen and (min-width:1440px) {
+  
+  .work {
+
+      .slide-nav:nth-child(2) {
+         right: 100px;
+       }
+       .slide-nav:nth-child(3) {
+        left: 100px;
+       }
+
+       .work-section {
+        margin: 50px 0 50px 0;
+       }
+
+
+   .swiper {
+      width: 75%;
+      height: 90%;
+    }
+       .swiper-pagination {
+        bottom:-10px;
+       }
+  }
+}

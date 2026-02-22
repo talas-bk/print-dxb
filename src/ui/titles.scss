@@ -1,0 +1,13 @@
+@use '../base/mixin.scss' as *;
+@use '../base/varibles.scss'as *;
+
+.title-h1 {
+    @include title;
+    font-size: clamp(25px, 5vw, 50px);
+    line-height: clamp(35px,5vw,65px);
+    background-image: -webkit-linear-gradient(150deg,rgb(226, 224, 221) 0%, rgb(62, 99, 169) 100%, );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+}

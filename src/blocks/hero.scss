@@ -1,0 +1,96 @@
+@use '../base/varibles.scss'as *;
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding: 0 25px;
+
+ .back-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+}
+
+.icon {
+    width:clamp(50px, 9vw,60px);
+    border-radius: 20%;
+    height:clamp(50px, 9vw,60px);
+    background-color: $greyblue;
+    border: 1px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    font-size:clamp(27px,5vw,50px);
+    color: white;
+    transition: 0.3s ease;
+    transform: scale(1);
+}
+
+.icon:hover {
+    transform: scale(1.08);
+}
+
+@media screen and (min-width:640px) {
+    
+  .hero-icons {
+  
+    .container {
+        padding: 0 80px;
+    }
+
+  }
+}
+
+@media  screen and (min-width:768px) {
+    .back-video-2{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.1;
+}
+}
+
+@media screen and (min-width:1024px) {
+
+    .hero {
+
+        .title {
+           line-height: 65px;
+        }
+    }
+
+.icon {
+    width:clamp(50px, 9vw,70px);
+    border-radius: 20%;
+    height:clamp(50px, 9vw,70px);
+    background-color: $greyblue;
+    border: 1px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    font-size:clamp(27px,9vw,40px);
+    color: white;
+    transition: 0.3s ease;
+    transform: scale(1);
+}
+
+.hero-icons {
+    animation: logos 20s infinite;
+}
+
+}
+
+
+@media screen and (min-width:1280px) {
+
+
+}

@@ -1,0 +1,103 @@
+
+
+.materials {
+
+    .cards-material {
+        max-width: 500px;
+        transition: .3s ease;
+    }
+
+    .cards-material:hover {
+        transform: translatey(-5px);
+    }
+
+.icon-mat {
+    font-size:clamp(30px,5vw,30px) ;
+}
+
+
+ .mat-h1 {
+        font-weight:bold;
+    }
+
+.mat-span {
+        font-weight: bold;
+   }
+
+   p {
+    font-size: clamp(16px,5vw, 22px);
+   }
+
+   .service-p {
+    font-weight: 400;
+   }
+
+   .text-sm {
+    font-size: 17px;
+   }
+
+}
+
+@media screen and (min-width:768px) {
+    
+.materials {
+
+.icon-mat {
+    font-size:clamp(30px,5vw,47px) ;
+   }  
+
+    p {
+    font-size: clamp(16px,5vw, 22px);
+    line-height: 25px;
+   }
+
+   .service-p {
+    font-weight: 400;
+    font-size: 24px;
+   }
+
+   .text-sm {
+    font-size: 22px;
+   }
+
+}
+
+}
+
+@media screen and (min-width:1024px) {
+    
+    .materials {
+
+          p {
+          font-size: clamp(16px,5vw, 28px);
+       }
+
+       .cards-material {
+           width: 380px;
+       }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    
+       .materials {
+
+        .container {
+            padding: 0;
+        }
+        .cards-material {
+             width: 275px;
+        }
+       }
+
+}
+
+@media screen and (min-width:1536px) {
+    
+    .materials {
+
+        .cards-material {
+           width: 320px ;
+        }
+    }
+}

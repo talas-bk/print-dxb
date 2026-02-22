@@ -1,0 +1,24 @@
+@use '../base/mixin.scss'as *;
+@use '../base/varibles.scss'as *;
+
+
+.text-paraph{
+
+    @include text{
+        font-size: clamp(13px, 4vw, 26px);
+        line-height:clamp(21px,5vw,30px);
+        color:white;
+        letter-spacing:clamp(0.5px , 5vw, 0.3px);
+    }
+
+}
+
+.service-p {
+    
+    @include text {
+         font-size: clamp(13px, 4vw,16px);
+        line-height:clamp(16px,5vw,20px);
+        color:white;
+        letter-spacing:clamp(0.5px , 5vw, 0.3px);
+    }
+}
